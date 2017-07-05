@@ -1,27 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 @font-face {
     font-family: "GL-Grimoire-MinKey";
     src: url("GL-Grimoire-MinKey.ttf");
 }
+
+/*Globals*/
+
 html { 
 	height:100%;
 }
 
 body {
-	background: url("img/grasslands_light.png") no-repeat center center fixed; 
+	background: url("img/grasslands.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-#contentdiv {
+#navigationdiv {
 	font-family: 'Advent Pro', sans-serif;
 	position: fixed;
-	top: 15%;
-	left: 15%;
-	width: 365px;
-	height: 700px;
+	top: 50%;
+	right: 60%;
+	width: 350px;
+	height: 550px;
+	margin-top:-290px;
+	/* Margin top is height /2 inversed + some adjustments*/
+	padding:15px;
+	border-radius: 25px;
+	background-color:rgba(255,255,255,0.7);
 }
 
 #title {
@@ -42,9 +51,14 @@ body {
 	text-align: center;
 }
 
-#abouttext {
-	font-size:20px;
-	font-weight: bold;
+#rightpannel{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 50%;
+	height: 100%;
+	background-color:rgba(255,255,255,0.7);
+  	overflow-y: auto;
 }
 
 .Grimoire {
@@ -69,3 +83,66 @@ a:hover{
     text-decoration: none;
     color:#454545;	
 }
+
+
+/*About Page */
+
+#abouttext {
+	font-family: 'Roboto', sans-serif;
+	padding:50px;
+	font-size:20px;
+}
+
+#socialmediaicons {
+	padding-left: 3px;
+	padding-right:3px;
+}
+
+/*Academia*/
+
+#academiatext {
+	font-family: 'Roboto', sans-serif;
+	padding:50px;
+	font-size:20px;
+}
+
+
+/*Side Projects */
+
+#sideprojecttext {
+	font-family: 'Roboto', sans-serif;
+	padding:50px;
+	font-size:20px;
+}
+
+/*
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.projectthumbnail {
+  position: relative;
+  /*
+  border: 1px solid #333;
+  overflow: hidden;*/
+  width: 200px;
+}
+.projectthumbnail img {
+  max-width: 100%;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.projectthumbnail:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
