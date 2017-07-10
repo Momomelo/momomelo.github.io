@@ -19,15 +19,24 @@ body {
 	background-size: cover;
 }
 
+#leftpannel{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 50%;
+	height: 100%;
+}
+
 #navigationdiv {
 	font-family: 'Advent Pro', sans-serif;
-	position: fixed;
+	position: absolute;
 	top: 50%;
-	right: 60%;
+	left: 50%;
 	width: 350px;
 	height: 550px;
 	margin-top:-290px;
 	/* Margin top is height /2 inversed + some adjustments*/
+	margin-left:-190px;
 	padding:15px;
 	border-radius: 25px;
 	background-color:rgba(255,255,255,0.7);
