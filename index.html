@@ -8,16 +8,19 @@
 	<title>Kei'ichiro Yamamoto </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </meta>
 	<link href = "style.css" type="text/css" rel="stylesheet"> </link>
-
-
 </head>
 
 <body>
-
 <div id= "leftpannel">
 <div id= "navigation">
-	<div id="nav_title">Kei'ichiro Yamamoto</div>
-	<div id="nav_subtitle"> UX Design &amp; Media Production </div>
+	<div id="nav_title">
+		Kei'ichiro Yamamoto
+	</div>
+	
+	<div id="nav_subtitle"> 
+	UX Design &amp; Media Production 
+	</div>
+	
 	<div id="nav_links">		
 	<table>
 		<tr>
@@ -113,19 +116,17 @@
 	</div>
 </div>
 
-
+<footer>
 <script type="text/javascript">
-
-
 	var works, home, sideprojects, academia, oldPage;
 
 	works = document.getElementById('works');
 	home = document.getElementById('home');
 	sideprojects = document.getElementById('sideprojects');
 	academia = document.getElementById('academia');
-
 	oldPage = document.getElementById('home');
 
+//This is a really poorly written function to make different divs fade in and out. I'm sorry.
    function toggle_visibility(id) {
        var e = document.getElementById(id);
        console.log(id);
@@ -133,8 +134,8 @@
        if ( id === "works" ) {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
+       		   	oldPage.style.display = 'none';
        			works.style.display = 'block';
-       			oldPage.style.display = 'none';
        			works.style.opacity = '1';
        			oldPage = e;
        		}, 600);
@@ -142,8 +143,8 @@
        else if ( id === "home" ) {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
+              	oldPage.style.display = 'none';
        			home.style.display = 'block';
-       			oldPage.style.display = 'none';
        			home.style.opacity = '1';
        			oldPage = e;
        		}, 600);
@@ -152,8 +153,8 @@
        else if ( id === "academia" ) {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
+       	   		oldPage.style.display = 'none';
        			academia.style.display = 'block';
-       			oldPage.style.display = 'none';
        			academia.style.opacity = '1';
        			oldPage = e;
        		}, 600);
@@ -162,17 +163,16 @@
        else if ( id === "sideprojects" ) {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
+              	oldPage.style.display = 'none';
        			sideprojects.style.display = 'block';
-       			oldPage.style.display = 'none';
        			sideprojects.style.opacity = '1';
        			oldPage = e;
        		}, 600);
        	}
-
        console.log(oldPage);
    }
-
 </script>
+</footer>
 
 </body>
 </html>
