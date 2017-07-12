@@ -1,42 +1,52 @@
 <!DOCTYPE html>
- <!--Oh, hi so you looked at the source code. Here's some additional content about me-->
- <!--Kei'ichi's hobbies are anime, gaming, esports, production work, and making positive shared excperiences others.-->
- <!--Kei'ichi believes that we over complicate many things in life and we really need to enjoy the simple things.--> 
+ <!--Oh, hi so you looked at the source code. It's a bit messy, but this is all hand-coded through my own work! It's not the best back-end but I tried my best and learned a lot in the proecess.-->
+ <!--Kei'ichi's hobbies are anime, gaming, esports, production work, and making positive shared excperiences with others.-->
+ <!--Kei'ichi believes that we over complicate many things in life and we really need to enjoy the simple everyday miracles.--> 
 
 <html>
 <head>
-	<title>Kei'ichiro Yamamoto - Home </title>
+	<title>Kei'ichiro Yamamoto </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </meta>
 	<link href = "style.css" type="text/css" rel="stylesheet"> </link>
+
 
 </head>
 
 <body>
 
 <div id= "leftpannel">
-<div id= "navigationdiv">
-	<div id="title">Kei'ichiro Yamamoto</div>
-	<div id="subtitle"> UX Design & Media Production </div>
-	<div id="linksdiv">		
+<div id= "navigation">
+	<div id="nav_title">Kei'ichiro Yamamoto</div>
+	<div id="nav_subtitle"> UX Design &amp; Media Production </div>
+	<div id="nav_links">		
 	<table>
 		<tr>
 			<td>
-				<div class ="Grimoire"><a href="works.html"> a</a></div>
-				<a href="works.html"><b>Works</b></a>
+				<div id="worksNav" onclick="toggle_visibility('works');">
+					<a href="#" class ="Grimoire" > a</a>
+					<a><b>Professional Work</b></a>
+				</div>
 			</td>
 			<td>
-				<div class ="Grimoire"><a href="sideprojects.html"> b</a></div>
-				<a href="sideprojects.html"><b>Side Projects</b></a>
+				<div id="sideprojectsNav" onclick="toggle_visibility('sideprojects');">
+					<a href="#" class ="Grimoire" > b</a>
+					<a ><b>Personal Projects</b></a>
+				</div>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<div class ="Grimoire"><a href="academia.html"> c</a></div>
-				<a href="academia.html"><b>Academia</b></a>
+				<div id="academiaNav" onclick="toggle_visibility('academia');">
+					<a href="#" class ="Grimoire" > c</a>
+					<a ><b>Academia</b></a>
+				</div>
 			</td>
 			<td>
-				<div class ="Grimoire"> <a href="index.html"> d</a></div>
-				<a href="home.html"><b>Home</b></a>
+
+				<div id="homeNav" onclick="toggle_visibility('home');">
+					<a href="#" class ="Grimoire" > d</a>
+					<a ><b>Home</b></a>
+				</div>
 			</td>
 		</tr>
 	</table> 
@@ -45,31 +55,124 @@
 </div>
 
 <div id= "rightpannel">
-	<div id="abouttext">
-		</br>
-			<font size="40px"><b>About</b></font>
-		</br>
-		</br>
-		</br>
-		"Hello stranger, I am Kei'ichiro, "Kei'ichi" for short, "Kei" for shorter. Pleased to meet you. I like to tell stories and build fun experiences."
-		</br>
-		</br>
-		Kei'ichiro has completed a Master's degree at the Univesity of Toronto Faculty of Information, in User Experience Design and Information Systems.
-		</br>
-		</br>
-		Kei'ichiro's hobbies include playing video games, translating things from JPN->ENG and hiking.
-		</br>
-		</br>
-		If you would like to contact Kei'ichiro, please email yamamotok(at)outlook(dot)com or contact him with one of the social media icons below:
-		</br>
-		</br>
-		<a href="https://www.linkedin.com/in/keiichiroyamamoto/"><img src="img/linkedinroundsquare.png" alt="LinkedIn Social Icon" style="width:28px;height:28px; padding-right:3px;"></a>
-		<a href="https://twitter.com/kei1ro_"><img src="img/twitterroundsquare.png" alt="Twitter Social Icon" style="width:28px;height:28px; padding-left:3px; padding-right:3px;"></a>
-		</br>
-		</br>
-		</br>
+	<div id= "home">
+		<div id="right_title">
+			About
+		</div>
+		<div id="right_text">
+			"Hello stranger, I am Kei'ichiro, "Kei'ichi" for short, "Kei" for shorter. Pleased to meet you. I 	like to tell stories and build fun experiences."
+			</br>
+			</br>
+			Kei'ichiro has completed a Master's degree at the Univesity of Toronto Faculty of Information, in 	User Experience Design and Information Systems.
+			</br>
+			</br>
+			Kei'ichiro's hobbies include playing video games, translating things from JPN->ENG and hiking.
+			</br>
+			</br>
+			If you would like to contact Kei'ichiro, please email yamamotok(at)outlook(dot)com or contact him 	with one of the social media icons below:
+			</br>
+			</br>
+			<a href="https://www.linkedin.com/in/keiichiroyamamoto/"><img src="img/linkedinroundsquare.png" alt="LinkedIn Social Icon" style="width:28px;height:28px; padding-right:3px;"></a>
+			<a href="https://twitter.com/kei1ro_"><img src="img/twitterroundsquare.png" alt="Twitter Social Icon" style="width:28px;height:28px; padding-left:3px; padding-right:3px;"></a>
+		</div>
+	</div>
+
+	<div id="works">
+		<div id="right_title">
+			Professional Work
+		</div>
+		<div id="right_text">
+			Coming Soon!
+			</br>
+		</div>
+	</div>
+
+	<div id="sideprojects">
+		<div id="right_title">
+			Personal Projects
+		</div>
+		<div id="right_text">
+			<div class="projectthumbnail">
+			 	<a href="https://docs.google.com/presentation/d/1m4CR-E1L7jgFhmnx0w53C4hfvKLyH9Oy3mZ2C68irQY/pub?start=false&loop=false&delayms=5000" target="_blank"> <img src="img/t7subs.png" alt="Tokyo 7th Subs" width="200" height="200"> </a>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="academia">
+		<div id="right_title">
+			Academia
+		</div>
+		<div id= "right_subtitle">
+			Recent Publications:
+		</div>
+		<div id="right_text">
+			Yamamoto, K. &amp; McArthur, V. (2015). <i>Digital economies and trading in counter strike global offensive: How virtual items are valued to real world currencies in an online barter-free market.</i> In IEEE Games Entertainment Media Conference (GEM),Toronto, ON, pp.1-6 doi: 10.1109/GEM.2015.7377220
+			</br>
+		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+
+
+	var works, home, sideprojects, academia, oldPage;
+
+	works = document.getElementById('works');
+	home = document.getElementById('home');
+	sideprojects = document.getElementById('sideprojects');
+	academia = document.getElementById('academia');
+
+	oldPage = document.getElementById('home');
+
+   function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       console.log(id);
+
+       if ( id === "works" ) {
+       		oldPage.style.opacity = '0';
+       		setTimeout(function() {
+       			works.style.display = 'block';
+       			oldPage.style.display = 'none';
+       			works.style.opacity = '1';
+       			oldPage = e;
+       		}, 600);
+       	}
+       else if ( id === "home" ) {
+       		oldPage.style.opacity = '0';
+       		setTimeout(function() {
+       			home.style.display = 'block';
+       			oldPage.style.display = 'none';
+       			home.style.opacity = '1';
+       			oldPage = e;
+       		}, 600);
+       	}
+
+       else if ( id === "academia" ) {
+       		oldPage.style.opacity = '0';
+       		setTimeout(function() {
+       			academia.style.display = 'block';
+       			oldPage.style.display = 'none';
+       			academia.style.opacity = '1';
+       			oldPage = e;
+       		}, 600);
+       	}
+
+       else if ( id === "sideprojects" ) {
+       		oldPage.style.opacity = '0';
+       		setTimeout(function() {
+       			sideprojects.style.display = 'block';
+       			oldPage.style.display = 'none';
+       			sideprojects.style.opacity = '1';
+       			oldPage = e;
+       		}, 600);
+       	}
+
+       console.log(oldPage);
+   }
+
+</script>
 
 </body>
 </html>
