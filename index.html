@@ -27,13 +27,13 @@
 			<td>
 				<div id="worksNav" onclick="toggle_visibility('works');">
 					<a href="#" class ="Grimoire" > a</a>
-					<a><b>Professional Work</b></a>
+					<a style="cursor: pointer;"><b>Professional Work</b></a>
 				</div>
 			</td>
 			<td>
 				<div id="sideprojectsNav" onclick="toggle_visibility('sideprojects');">
 					<a href="#" class ="Grimoire" > b</a>
-					<a ><b>Personal Projects</b></a>
+					<a style="cursor: pointer;"><b>Personal Projects</b></a>
 				</div>
 			</td>
 		</tr>
@@ -41,14 +41,14 @@
 			<td>
 				<div id="academiaNav" onclick="toggle_visibility('academia');">
 					<a href="#" class ="Grimoire" > c</a>
-					<a ><b>Academia</b></a>
+					<a style="cursor: pointer;"><b>Academia</b></a>
 				</div>
 			</td>
 			<td>
 
 				<div id="homeNav" onclick="toggle_visibility('home');">
 					<a href="#" class ="Grimoire" > d</a>
-					<a ><b>Home</b></a>
+					<a style="cursor: pointer;"><b>Home</b></a>
 				</div>
 			</td>
 		</tr>
@@ -63,20 +63,22 @@
 			About
 		</div>
 		<div id="right_text">
-			"Hello stranger, I am Kei'ichiro, "Kei'ichi" for short, "Kei" for shorter. Pleased to meet you. I 	like to tell stories and build fun experiences."
-			</br>
-			</br>
-			Kei'ichiro has completed a Master's degree at the Univesity of Toronto Faculty of Information, in 	User Experience Design and Information Systems.
-			</br>
-			</br>
-			Kei'ichiro's hobbies include playing video games, translating things from JPN->ENG and hiking.
-			</br>
-			</br>
-			If you would like to contact Kei'ichiro, please email yamamotok(at)outlook(dot)com or contact him 	with one of the social media icons below:
-			</br>
-			</br>
-			<a href="https://www.linkedin.com/in/keiichiroyamamoto/"><img src="img/linkedinroundsquare.png" alt="LinkedIn Social Icon" style="width:28px;height:28px; padding-right:3px;"></a>
-			<a href="https://twitter.com/kei1ro_"><img src="img/twitterroundsquare.png" alt="Twitter Social Icon" style="width:28px;height:28px; padding-left:3px; padding-right:3px;"></a>
+			<p>Hello stranger, I am Kei'ichiro, "Kei'ichi" for short, "Kei" for shorter. Pleased to meet you. </p>
+
+			<p>I strive to create memorable shared stories and experiences thorugh utilizing both design thinking fundamentals and game design thoery to create innovative solutions.
+			<br>
+			<b>Specialties:</b> User Experience Design, User Research, Information Architechture, Storybuilding, Multiplayer Experiences, Game Design, Video Editing. </p>
+
+			<p> Current resume can be found <a href="files/Keiichiro_Latest_Resume.pdf" style="font-weight: bold;"> here</a>.</p>
+
+			<p>I studied User Experience Design and Information Systems at the University of Toronto Faculty of Information Masters Program between 2015-2017. My undergraduate studies consisted of an Honors Bachelor of Arts at the University of Toronto between 2011-2015 and a Certificate in Digital Media from Sheridan College between 2013-2015. That sure was a whole lot of school. </p>
+
+			<p>On the side I enjoy playing video games, translating media from JPN->ENG, hiking, and travelling for various events and experiences.
+
+			<p>If you would like to contact me, please email yamamotok(at)outlook(dot)com or contact with one of the social media icons below:</p>
+
+			<p><a href="https://www.linkedin.com/in/keiichiroyamamoto/"><img src="img/linkedinroundsquare.png" alt="LinkedIn Social Icon" style="width:28px;height:28px; padding-right:3px;"></a>
+			<a href="https://twitter.com/kei1ro_"><img src="img/twitterroundsquare.png" alt="Twitter Social Icon" style="width:28px;height:28px; padding-left:3px; padding-right:3px;"></a></p>
 		</div>
 	</div>
 
@@ -95,12 +97,23 @@
 			Personal Projects
 		</div>
 		<div id="right_text">
-			<div class="projectthumbnail">
-			 	<a href="https://docs.google.com/presentation/d/1m4CR-E1L7jgFhmnx0w53C4hfvKLyH9Oy3mZ2C68irQY/pub?start=false&loop=false&delayms=5000" target="_blank"> <img src="img/t7subs.png" alt="Tokyo 7th Subs" width="200" height="200"> </a>
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<a href="https://docs.google.com/presentation/d/1m4CR-E1L7jgFhmnx0w53C4hfvKLyH9Oy3mZ2C68irQY/pub?start=false&loop=false&delayms=5000" target="_blank"> <img src="img/t7subs.png" alt="Tokyo 7th Subs" width="225" height="225"> </a>
+					</div>
+					<div class="back">
+					<a href="https://docs.google.com/presentation/d/1m4CR-E1L7jgFhmnx0w53C4hfvKLyH9Oy3mZ2C68irQY/pub?start=false&loop=false&delayms=5000" target="_blank"><div class="back-img"> </div></a>
+						<div class = "back-title"> <a href="https://docs.google.com/presentation/d/1m4CR-E1L7jgFhmnx0w53C4hfvKLyH9Oy3mZ2C68irQY/pub?start=false&loop=false&delayms=5000" target="_blank">Tokyo 7th Subs</a></div>
+						<div class = "back-text"> <a href="https://docs.google.com/presentation/d/1m4CR-E1L7jgFhmnx0w53C4hfvKLyH9Oy3mZ2C68irQY/pub?start=false&loop=false&delayms=5000" target="_blank">Tokyo 7th Subs brings fan translations to the Japanese mobile game "Tokyo 7th Sisters".</a> </div>
+					</div>
+				</div>
 			</div>
 
 		</div>
 	</div>
+
 
 	<div id="academia">
 		<div id="right_title">
@@ -131,7 +144,7 @@
        var e = document.getElementById(id);
        console.log(id);
 
-       if ( id === "works" ) {
+       if ( id === "works" && works.style.display != "block") {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
        		   	oldPage.style.display = 'none';
@@ -140,7 +153,7 @@
        			oldPage = e;
        		}, 600);
        	}
-       else if ( id === "home" ) {
+       else if ( id === "home" && home.style.display != "block") {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
               	oldPage.style.display = 'none';
@@ -150,7 +163,7 @@
        		}, 600);
        	}
 
-       else if ( id === "academia" ) {
+       else if ( id === "academia"  && academia.style.display != "block") {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
        	   		oldPage.style.display = 'none';
@@ -160,7 +173,7 @@
        		}, 600);
        	}
 
-       else if ( id === "sideprojects" ) {
+       else if ( id === "sideprojects"  && sideprojects.style.display != "block") {
        		oldPage.style.opacity = '0';
        		setTimeout(function() {
               	oldPage.style.display = 'none';
