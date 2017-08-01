@@ -1,9 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 @font-face {
-    font-family: "GL-Grimoire-MinKey";
-    src: url("GL-Grimoire-MinKey.ttf");
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qg8g1q');
+  src:  url('fonts/icomoon.eot?qg8g1q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qg8g1q') format('truetype'),
+    url('fonts/icomoon.woff?qg8g1q') format('woff'),
+    url('fonts/icomoon.svg?qg8g1q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 /*Globals*/
 
@@ -31,6 +38,10 @@ a, a:visited, a:active{
 
 }
 
+td {
+  padding-bottom: 1em;
+}
+
 a:hover{
     text-decoration: none;
     color:#454545;	
@@ -51,7 +62,7 @@ a:hover{
 	top: 50%;
 	left: 50%;
 	width: 350px;
-	height: 550px;
+	height: 575px;
 	margin-top:-290px;
 	/* Margin top is height /2 inversed + some adjustments*/
 	margin-left:-190px;
@@ -79,12 +90,6 @@ a:hover{
 	text-align: center;
 }
 
-.Grimoire {
-    font-family:'GL-Grimoire-MinKey';
-    font-size:100px;
-    text-align:center;
-}
-
 /*Right side*/
 #rightpannel{
 	position: absolute;
@@ -106,7 +111,7 @@ a:hover{
 
 #right_subtitle{
 	font-size:25px;
-	margin:5px 0px 0px 50px;
+	margin:10px 0px 0px 50px;
 	font-family: 'Advent Pro', sans-serif;
 	font-weight: bold;
 }
@@ -121,6 +126,41 @@ a:hover{
 	margin-left:3px;
 	margin-right:3px;
 }
+
+
+/*Fonts */
+/*Rendered Icons*/
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+    font-size:100px;
+    text-align:center;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star_icon:before {
+  content: "\e900";
+}
+.icon-question_icon:before {
+  content: "\e901";
+}
+.icon-study_icon:before {
+  content: "\e902";
+}
+.icon-heart_icon:before {
+  content: "\e903";
+}
+
 
 /* Flip animation*/
 /* entire container, keeps perspective */
@@ -167,8 +207,8 @@ a:hover{
 	transform: rotateY(180deg);
 	background: #ffffff;
 }
-
-.back-img{
+/*EVERY PROJECT PANNEL (for now because I'm bad at webdev) */
+.back-img-t7s{
 	position: absolute;
 	top: 0px;
 	left:0px;
@@ -180,6 +220,20 @@ a:hover{
 	z-index: -1;
 	cursor:pointer;
 }
+
+.back-img-career-alignment{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width:225px;
+	height:225px;
+	background: url("img/careercenterUX_alignment_blur.png");
+	background-size:225px 225px;
+	opacity: 0.4;
+	z-index: -1;
+	cursor:pointer;
+}
+
 
 .back-title{
 	font-size:25px ;
@@ -193,9 +247,13 @@ a:hover{
 	font-size:18px;
 	z-index: 1;
 	text-align: center;
-	margin: 15px 15px 0px 15px;
+	margin: 12px 15px 0px 15px;
 	word-wrap: break-word;
 	cursor:pointer;
+}
+
+#tags{
+	font-size: 12px;
 }
 
 /*Script elements for navigation*/
@@ -220,6 +278,4 @@ a:hover{
  display: none;
  opacity: 0;
 }
-
-
 
