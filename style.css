@@ -221,6 +221,20 @@ a:hover{
 	cursor:pointer;
 }
 
+.back-img-tlblog{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width:225px;
+	height:225px;
+	background: url("img/TLblog_blur.png");
+	background-size:225px 225px;
+	opacity: 0.4;
+	z-index: -1;
+	cursor:pointer;
+}
+
+
 .back-img-career-alignment{
 	position: absolute;
 	top: 0px;
@@ -272,6 +286,7 @@ a:hover{
 
 #tags{
 	font-size: 12px;
+	text-align: center;
 }
 
 /*Script elements for navigation*/
